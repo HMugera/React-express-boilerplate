@@ -1,0 +1,11 @@
+{
+  "name": "react-express-boilerplate",
+  "version": "1.0.0",
+  "description": "biolerplate for react and express application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hughes mugera",
+  "license": "ISC"
+}
