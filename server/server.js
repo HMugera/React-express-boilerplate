@@ -1,15 +1,12 @@
 const express = require('express');
-
 const app = express();
+const cors = require('cors');
+app.use(cors());
+app.use(express.json());
 
-app.get('/api/employees', (req, res) => {
-  const customers = [
-    { id: 1, firstName: 'John', lastName: 'Doe' },
-    { id: 2, firstName: 'Linda', lastName: 'Harry' },
-    { id: 3, firstName: 'Hero', lastName: 'Suzuki' },
-  ];
-  res.json(customers);
-});
+
+
+app.use('/', require('./routes/employeeRoutes'));
 
 const port = 5000;
 
